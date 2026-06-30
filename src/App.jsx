@@ -6,6 +6,8 @@ import Learnevent from './components/Learnevent'
 import LearnLiftingStateup from './components/LearnLiftingStateup'
 import UseState from './components/UseState'
 import Counterapp from './components/Counterapp'
+import LearnUseEffect from './components/LeranUseEffect'
+import LearnuseMemo from './components/LearnuseMemo'
 
 function App() {
   const getStock = (data) => {
@@ -22,7 +24,9 @@ function App() {
       {/* { <Learnevent /> } */}
       {/* {<LearnLiftingStateup getStock={getStock} /> } */}
       {/* <UseState /> */}
-      <Counterapp />
+      {/* <Counterapp /> */}
+      {/* <LearnUseEffect /> */}
+      <LearnuseMemo />
     </>
   )
 }
