@@ -8,11 +8,19 @@ import UseState from './components/UseState'
 import Counterapp from './components/Counterapp'
 import LearnUseEffect from './components/LeranUseEffect'
 import LearnuseMemo from './components/LearnuseMemo'
+import Child1 from './components/Child1'
+import { createContext } from 'react' 
+
+// create , Provider, Consumer - context API
+const StockContext = createContext()
 
 function App() {
   const getStock = (data) => {
     console.log(data)
   }
+
+  let stock = 'Tesla'
+  let price = 1000
 
   return (
     <>
@@ -26,9 +34,13 @@ function App() {
       {/* <UseState /> */}
       {/* <Counterapp /> */}
       {/* <LearnUseEffect /> */}
-      <LearnuseMemo />
+      {/* <LearnuseMemo /> */}
+      <StockContext.Provider value={{stock, price}}>
+        <Child1 />
+      </StockContext.Provider>
     </>
   )
 }
 
 export default App
+export { StockContext }
