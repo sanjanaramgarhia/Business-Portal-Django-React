@@ -9,7 +9,8 @@ import Counterapp from './components/Counterapp'
 import LearnUseEffect from './components/LeranUseEffect'
 import LearnuseMemo from './components/LearnuseMemo'
 import Child1 from './components/Child1'
-import { createContext } from 'react' 
+import { createContext } from 'react'
+import LearnUseRef from './components/LearnUseRef'
 
 // create , Provider, Consumer - context API
 const StockContext = createContext()
@@ -35,9 +36,11 @@ function App() {
       {/* <Counterapp /> */}
       {/* <LearnUseEffect /> */}
       {/* <LearnuseMemo /> */}
-      <StockContext.Provider value={{stock, price}}>
+      {/* <StockContext.Provider value={{stock, price}}>
         <Child1 />
-      </StockContext.Provider>
+      </StockContext.Provider> */}
+      <LearnUseRef />
+
     </>
   )
 }
