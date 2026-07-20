@@ -11,6 +11,7 @@ import LearnuseMemo from './components/LearnuseMemo'
 import Child1 from './components/Child1'
 import { createContext } from 'react'
 import LearnUseRef from './components/LearnUseRef'
+import LearnCustomHooks from './components/LearnCustomHooks'
 
 // create , Provider, Consumer - context API
 const StockContext = createContext()
@@ -39,7 +40,8 @@ function App() {
       {/* <StockContext.Provider value={{stock, price}}>
         <Child1 />
       </StockContext.Provider> */}
-      <LearnUseRef />
+      {/* <LearnUseRef /> */}
+      <LearnCustomHooks />
 
     </>
   )
