@@ -12,6 +12,10 @@ import Child1 from './components/Child1'
 import { createContext } from 'react'
 import LearnUseRef from './components/LearnUseRef'
 import LearnCustomHooks from './components/LearnCustomHooks'
+import LearnConditionalRendering from './components/LearnConditionalRendering'
+import LearnMap from './components/LearnMap'
+import LearnInlineCSS from './components/LearnInlineCSS'
+import LearnLoadingImages from './components/LearnLoadingImages'
 
 // create , Provider, Consumer - context API
 const StockContext = createContext()
@@ -41,7 +45,11 @@ function App() {
         <Child1 />
       </StockContext.Provider> */}
       {/* <LearnUseRef /> */}
-      <LearnCustomHooks />
+      {/* <LearnCustomHooks /> */}
+      {/* <LearnConditionalRendering/> */}
+      {/* <LearnMap/> */}
+      {/* <LearnInlineCSS /> */}
+      <LearnLoadingImages/>
 
     </>
   )
