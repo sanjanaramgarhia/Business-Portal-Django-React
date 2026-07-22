@@ -16,6 +16,7 @@ import LearnConditionalRendering from './components/LearnConditionalRendering'
 import LearnMap from './components/LearnMap'
 import LearnInlineCSS from './components/LearnInlineCSS'
 import LearnLoadingImages from './components/LearnLoadingImages'
+import LearnForms from './components/LearnForms'
 
 // create , Provider, Consumer - context API
 const StockContext = createContext()
@@ -49,7 +50,8 @@ function App() {
       {/* <LearnConditionalRendering/> */}
       {/* <LearnMap/> */}
       {/* <LearnInlineCSS /> */}
-      <LearnLoadingImages/>
+      {/* <LearnLoadingImages/> */}
+      <LearnForms/>
 
     </>
   )
