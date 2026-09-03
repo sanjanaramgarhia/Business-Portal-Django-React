@@ -1,6 +1,4 @@
-from fastapi import FastAPI, Request
-from src.utils.settings import settings
-from src.tasks.models import TaskModel
+from fastapi import FastAPI
 from src.tasks.urls import task_routes
 from src.utils.db import engine, Base
 
